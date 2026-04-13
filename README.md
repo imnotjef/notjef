@@ -22,35 +22,34 @@
 ```java
 public class AboutMe { 
 
-    private final String[] languages = {"pt-BR", "EN"};
+    private final String[] languages = {"pt-BR", "EN", "ES"};
 
     private final String[] description = {
-        "🧑‍💻 I'm 23 years old and passionate about technology and backend development",
-        "🎓 Currently studying Systems Analysis and Development",
-        "💼 Back-end Developer focused on Java and Spring Boot",
-        "🧠 Experience with Git, GitHub, CI/CD practices and Docker containerization.",
-        "☁️ Currently specializing in cloud technologies (AWS & Azure)",
-        "🛠 Focused on sharpening my Java, Spring Boot and cloud skills"
+        "🧑‍💻 24 years old, passionate about backend development",
+        "🎓 Studying Systems for Internet at FATEC São Roque",
+        "💼 Software Engineer focused on Java, Spring Boot and REST APIs",
+        "🧠 Clean Code, SOLID principles and layered architecture",
+        "🐳 Docker, PostgreSQL, MySQL and basics of Kafka",
+        "☁️ AWS and Azure fundamentals — deploy and scalability",
+
     };
 
-    private final String contactText = "💬 Ask me anything";
-    private final String contactUrl  = "https://github.com/Notjef";
+    private final String contactUrl = "https://linkedin.com/in/jeferson-rodrigo";
 
     public void printProfile() {
         System.out.println("=== ABOUT ME ===\n");
 
         System.out.println("🌐 Languages:");
         for (String lang : languages) {
-            System.out.println(" - " + lang);
+            System.out.println("  - " + lang);
         }
 
         System.out.println("\n📌 Description:");
         for (String desc : description) {
-            System.out.println(" - " + desc);
+            System.out.println("  - " + desc);
         }
 
-        System.out.println("\n📨 Contact:");
-        System.out.println(" - " + contactText + ": " + contactUrl);
+        System.out.println("\n📨 Let's connect: " + contactUrl);
     }
 
     public static void main(String[] args) {
